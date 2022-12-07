@@ -3,14 +3,14 @@ function getRandomHexColor() {
 }
 
 const btnEl = document.querySelector(".change-color");
-const divEl = document.querySelector('.widget');
+const divEl = document.querySelector('body');
 const spanEl = document.querySelector('.color');
 
 btnEl.addEventListener('click', changeColor)
 
 function changeColor() {
-  divEl.style.backgroundColor = `${getRandomHexColor()}`;
-  spanEl.textContent = `${getRandomHexColor()}`  
-    
-}
+  let color = `${getRandomHexColor()}`;
+  divEl.style.backgroundColor = color;
+  spanEl.textContent = color;  
+  }
 

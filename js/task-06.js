@@ -8,6 +8,9 @@ function classCarrent(){
     textInput.classList.remove(`valid`);
     textInput.classList.add(`invalid`);
     
-  } else textInput.classList.replace(`invalid`, `valid`);
+  } else
+    textInput.classList.remove(`invalid`);
+    textInput.classList.add(`valid`);
+  //textInput.classList.replace(`invalid`, `valid`);
 };
 
